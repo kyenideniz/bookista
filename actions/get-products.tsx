@@ -1,4 +1,4 @@
-import qs from "querystring";
+import qs from "query-string";
 
 import { Product } from "@/types";
 
@@ -12,7 +12,7 @@ interface Query {
 }
 
 const getProducts = async (query: Query): Promise<Product[]> => {
-    const url = qs.stringify({
+    const url = qs.stringifyUrl({
         url: URL,
         query: {
             colorId: query.colorId,
