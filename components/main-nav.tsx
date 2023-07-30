@@ -7,26 +7,26 @@ import { cn } from "@/lib/utils";
 import { Category } from "@/types";
 
 interface MainNavProps{
-    data: Category[],
+    //data: [string],
 };
 
 const MainNav: React.FC<MainNavProps> = ({
-    data
+    //data
 }) => {
 
-    const pathname = usePathname();
+    /*const pathname = usePathname();
     const routes = data.map((route) => ({
-        /*href: `/category/${route.id}`,*/
+        /*href: `/category/${route.id}`,
         href:`/`,
-        label: route.name,
-        active: pathname === `/category/${route.id}`
-    }))
+        label: String,
+        active: pathname === `/category/`
+    }))*/
 
     return ( 
         <nav
         className="mx-6 items-center flex space-x-4 lg:space-x-6"
         >
-            {routes.map((route) => (
+           {/* {routes.map((route) => (
                 <Link 
                 key={route.href}
                 href={route.href}
@@ -35,9 +35,9 @@ const MainNav: React.FC<MainNavProps> = ({
                     route.active ? "text-black" : "text-neutral-500"
                 )}
                 >
-                    {route.label}
-                </Link>
-            ))}
+                    {}
+                </Link> 
+            ))} */}
         </nav>
      );
 }

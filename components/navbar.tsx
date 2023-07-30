@@ -8,7 +8,7 @@ import NavBarActions from "@/components/navbar-actions";
 export const revalidate = 0
 
 const NavBar = async () => {
-    const categories = await getCategories();
+    const categories = [''];
 
     return ( 
         <div className="border-b">
@@ -17,7 +17,7 @@ const NavBar = async () => {
                     <Link href="/" className="ml-4 flex lg:ml-0 gap-x-2">
                         <p className="font-bold text-xl">Bookista</p>
                     </Link>
-                    <MainNav data={categories} />
+                    <MainNav />
                     <NavBarActions />
                 </div>
             </Container>

@@ -7,7 +7,7 @@ import { Product } from "@/types";
 import IconButton from "@/components/ui/icon-button";
 import Currency from "@/components/ui/currency";
 import LikeButton from "./like-button";
-import ProductPopUp from "./product-page";
+import ProductPopUp from "@/components/ui/product-page";
 
 interface ProductCard {
     data: Product; 
@@ -28,11 +28,7 @@ const ProductCard: React.FC<ProductCard> = ({
                     />  
                     <div className="opacity-0 group-hover:opacity-100 transition absolute w-full px-6 bottom-5">
                         <div className="flex gap-x-6 justify-center">
-                            <IconButton 
-                                onClick={() => {}}
-                                icon={<Expand size={20} className="text-gray-600" />}
-                            />
-
+                            <ProductPopUp data={data}/>
                         </div>
                     </div>
                 </div>

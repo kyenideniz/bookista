@@ -20,15 +20,15 @@ const NavBarActions = () => {
 
     return ( 
         <div className="ml-auto flex items-center">
-            <Button className="flex items-center roundded-full bg-black px-2 py-2">
+            {/*<Button className="flex items-center roundded-full bg-black px-2 py-2">
                 <span className="ml-2 text-sm font-medium text-white px-2 ">Sign In</span>
                 <LogInIcon
                     size={20}
                     color="white"
-                    onClick={() => {}}
+                    href='/sign-in'
                     className="flex"
                 />
-            </Button>
+            </Button>*/}
         </div>
      );
 }
